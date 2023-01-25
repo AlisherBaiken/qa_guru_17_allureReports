@@ -2,7 +2,6 @@ package com.sardeni;
 
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
-
 import static com.codeborne.selenide.Selenide.*;
 
 public class WebSteps {
@@ -11,7 +10,6 @@ public class WebSteps {
     public void openPage(String page) {
         open("https://github.com/" + page);
     }
-
     @Step("Вводим в строке поиска issueId {issueId}")
     public void inputIssueIdInSearchField(String issueId) {
         $("#js-issues-search").click();
@@ -24,5 +22,4 @@ public class WebSteps {
         $("#issue_2133_link").shouldHave(Condition.
                 text(issueName));
     }
-
 }

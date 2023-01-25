@@ -3,7 +3,6 @@ package com.sardeni;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selenide.*;
@@ -33,7 +32,6 @@ public class AllureReportStepsTest {
             $("#issue_2133_link").shouldHave(Condition.
                     text("Add ClickOptions argument for the doubleClick method"));
         });
-
     }
     @Test
     @DisplayName("Проверка имени Issue через annotation steps")
